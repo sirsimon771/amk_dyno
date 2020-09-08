@@ -39,9 +39,11 @@ namespace amk_dyno
                 //place labels and textboxes in the right spots
                 //put the created objects in arrays for reading later
                 //  pars.Key and pars.Value to acces in this loop
+                labels[i] = new Label();
                 labels[i].Text = pars.Key;
                 labels[i].Location = new Point(10, 10 + (i * 15));
 
+                textBoxes[i] = new TextBox();
                 textBoxes[i].Location = new Point(50, 10 + (i * 15));
 
                 i++;
