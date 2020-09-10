@@ -20,27 +20,44 @@ namespace amk_dyno
             InitializeComponent();
         }
 
+        public System.Windows.Forms.Label test2;
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //program startup
             Algorithm algorithm = new Algorithm();
             algorithm.PlaceParameters();
 
+
+            //trying to get a label created here to show up on the form
+            this.SuspendLayout();
+            this.Controls.Add(this.test2);
+            this.test2 = new System.Windows.Forms.Label
+            {
+                AutoSize = true,
+                Location = new System.Drawing.Point(100, 100),
+                Name = "test2",
+                Size = new System.Drawing.Size(75, 30),
+                Text = "testtest"
+            };
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
-        private void startstop_Click(object sender, EventArgs e)
+        private void StartStop_Click(object sender, EventArgs e)
         {
             //start-stop button
             running = !running;
             if(running)
             {
                 //turn on
-                startstop.BackColor = Color.FromArgb(0, 192, 0);
+                StartStop.BackColor = Color.FromArgb(0, 192, 0);
             }
             else
             {
                 //turn off
-                startstop.BackColor = Color.FromArgb(192, 0, 0);
+                StartStop.BackColor = Color.FromArgb(192, 0, 0);
             }
 
         }
