@@ -34,10 +34,12 @@ namespace amk_dyno
             running = !running;
             if(running)
             {
+                //turn on
                 startstop.BackColor = Color.FromArgb(0, 192, 0);
             }
             else
             {
+                //turn off
                 startstop.BackColor = Color.FromArgb(192, 0, 0);
             }
 
