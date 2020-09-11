@@ -7,7 +7,7 @@ namespace amk_dyno
     /// <summary>
     /// contains the read and write functions to communicate with the CAN adapter
     /// using the provided C# API of the driver
-    /// just copy from example and open a cmd for setup
+    /// just copy from example, put some textboxes down for config and a connect button
     /// </summary>
     class CAN
     {
