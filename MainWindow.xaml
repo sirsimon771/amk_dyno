@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas Name = "canvas1">
-        <Button Name = "button1" Canvas.Left="364" Canvas.Top="207">button1test?</Button>
+        <Button Name="startstop" Canvas.Left="364" Canvas.Top="207" Click="StartStop" Content="button1test?"></Button>
     </Canvas>
 </Window>
